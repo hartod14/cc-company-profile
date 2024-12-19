@@ -7,7 +7,6 @@ export default function Footer() {
     return (
         <footer className="bg-gray-900 text-white py-12">
             <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 gap-8">
-                {/* Address Section */}
                 <div>
                     <Image
                         src="/logistica.png"
@@ -27,7 +26,6 @@ export default function Footer() {
                     </p>
                 </div>
 
-                {/* Services Section */}
                 <div>
                     <h3 className="text-lg font-bold mb-4">Services</h3>
                     <ul className="space-y-2">
@@ -54,7 +52,6 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                {/* Quick Links Section */}
                 <div>
                     <h3 className="text-lg font-bold mb-4">Quick Links</h3>
                     <ul className="space-y-2">
@@ -79,7 +76,6 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                {/* Newsletter Section */}
                 <div>
                     <h3 className="text-lg font-bold mb-4">Newsletter</h3>
                     <p className="mb-4">Subscribe to our newsletter to get the latest updates and news.</p>

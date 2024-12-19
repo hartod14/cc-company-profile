@@ -2,9 +2,9 @@
 
 import React from 'react';
 import Image from 'next/image';
-import HistoryIcon from '@mui/icons-material/History'; // MUI History Icon
-import PeopleIcon from '@mui/icons-material/People'; // MUI People Icon
-import BusinessIcon from '@mui/icons-material/Business'; // MUI Business Icon
+import HistoryIcon from '@mui/icons-material/History';
+import PeopleIcon from '@mui/icons-material/People';
+import BusinessIcon from '@mui/icons-material/Business';
 import Link from 'next/link';
 
 const teamMembers = [
@@ -31,7 +31,6 @@ const teamMembers = [
 export default function AboutUs() {
     return (
         <div className="container mx-auto  px-8 md:px-32 pt-32 py-16">
-            {/* Company History Section */}
             <section className="mb-16">
                 <div className="flex items-center justify-center gap-2 mb-6">
                     <HistoryIcon className="text-primary" sx={{ fontSize: 30 }} />
@@ -44,7 +43,7 @@ export default function AboutUs() {
                 </p>
                 <div>
                     <Image
-                        src="/about-us/we_are.jpg" // Add a relevant history image
+                        src="/about-us/we_are.jpg"
                         alt="Our History"
                         width={960}
                         height={744}
@@ -53,7 +52,6 @@ export default function AboutUs() {
                 </div>
             </section>
 
-            {/* Team Section */}
             <section className="">
                 <div className="flex items-center justify-center gap-2 mb-6">
                     <PeopleIcon className="text-primary" sx={{ fontSize: 30 }} />
@@ -81,14 +79,13 @@ export default function AboutUs() {
                 </div>
                 <Link target='_blank' href={`/teams`}>
                     <div className="text-center py-12">
-                        <button className="text-sm text-primary border border-primary px-3 py-1 rounded hover:bg-primary hover:text-white transition-colors duration-300">
+                        <button className="text-sm text-primary border border-primary px-3 py-2 font-semibold rounded hover:bg-primary hover:text-white transition-colors duration-300">
                             Explore More
                         </button>
                     </div>
                 </Link>
             </section>
 
-            {/* Culture Section */}
             <section className="lg:flex gap-12 items-center py-8 lg:py-16 mb-10">
                 <div className='flex-1'>
                     <div className="flex items-center justify-center gap-2 mb-6">
@@ -104,7 +101,7 @@ export default function AboutUs() {
                 </div>
                 <div className='flex-1'>
                     <Image
-                        src="/about-us/teamwork.jpg" // Add a relevant culture image
+                        src="/about-us/teamwork.jpg"
                         alt="Company Culture"
                         width={800}
                         height={400}
@@ -113,7 +110,6 @@ export default function AboutUs() {
                 </div>
             </section>
 
-            {/* Additional Section: Why Choose Us */}
             <section className="mb-16 bg-gray-50 p-8 rounded-lg shadow-lg">
                 <h2 className="text-primary font-bold text-4xl text-center mb-6">Why Choose Us?</h2>
                 <div className="flex justify-center gap-16">

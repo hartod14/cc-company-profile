@@ -44,13 +44,11 @@ const services = [
 export default function Home() {
   return (
     <>
-      {/* Banner Section */}
       <section
         id="banner"
         className="relative bg-cover bg-center bg-no-repeat h-screen flex items-center justify-center text-white"
         style={{ backgroundImage: "url('/banner.jpg')" }}
       >
-        {/* Overlay for opacity */}
         <div className="absolute inset-0 bg-black opacity-50"></div>
 
         <div className="relative px-4 pt-40 md:px-8 z-10">
@@ -66,17 +64,15 @@ export default function Home() {
           </p>
           <Link
             href="#about-us"
-            className="mt-8 inline-block bg-primary text-white py-3 px-6 rounded-lg text-lg uppercase font-medium hover:bg-orange-600 transition duration-300"
+            className="mt-8 inline-block bg-primary text-white py-3 px-6 rounded-lg text-lg uppercase font-semibold hover:bg-orange-600 transition duration-300"
           >
             Read More
           </Link>
         </div>
       </section>
 
-      {/* About Us Section */}
       <section id="about-us" className="py-16 px-8 md:px-32">
         <div className="container mx-auto flex flex-col md:flex-row gap-8 items-center">
-          {/* Left Image Section */}
           <div className="w-full md:w-1/2 mb-8 md:mb-0">
             <Image
               src="/home/about_us.jpg"
@@ -87,7 +83,6 @@ export default function Home() {
             />
           </div>
 
-          {/* Right Content Section */}
           <div className="w-full md:w-1/2 md:pl-8">
             <h2 className="text-xl font-bold mb-4 text-primary" >About Us</h2>
             <h3 className="text-4xl font-semibold mb-6">
@@ -97,10 +92,7 @@ export default function Home() {
               We are dedicated to providing fast, reliable, and tailored transport and logistics solutions. With our expertise, we ensure your goods are delivered safely and on time, no matter where you are in the world.
             </p>
 
-            {/* Features */}
-
             <div className="flex gap-6">
-              {/* Global Coverage with Globe Icon */}
               <div className="flex items-start">
                 <div className="text-primary text-3xl mr-4">
                   <PublicIcon className="text-primary text-4xl" />
@@ -113,7 +105,6 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* On Time Delivery with Truck Icon */}
               <div className="flex items-start">
                 <div className="text-primary text-3xl mr-4">
                   <LocalShippingIcon className="text-primary text-4xl" />
@@ -127,8 +118,6 @@ export default function Home() {
               </div>
             </div>
 
-
-            {/* Explore More Button */}
             <Link
               href="/about-us"
               className="mt-8 inline-block bg-primary text-white py-3 px-6 rounded-lg text-lg uppercase font-medium hover:bg-[#ec3d40] transition duration-300"
@@ -153,7 +142,6 @@ export default function Home() {
               key={index}
               className="bg-white p-6 rounded-lg shadow-lg group hover:shadow-xl transition duration-300"
             >
-              {/* Image at the top of the card */}
               <div className="mb-6">
                 <Image
                   src={service.image}
@@ -187,7 +175,6 @@ export default function Home() {
 
       <section id="features" className="py-16 px-8 md:px-32">
         <div className="container mx-auto flex flex-col md:flex-row gap-8 items-center">
-          {/* Left Content Section */}
           <div className="w-full md:w-1/2 md:pl-8">
             <h2 className="text-xl font-bold mb-4 text-primary">Our Features</h2>
             <h3 className="text-4xl font-semibold mb-6">
@@ -196,9 +183,7 @@ export default function Home() {
             <p className="text-gray-700 mb-8">
               We are committed to providing top-notch logistics services with a global network, ensuring your shipments arrive on time and without hassle. Trust us to handle your logistics needs with efficiency and care.
             </p>
-            {/* Features List */}
             <div className="flex flex-col gap-6">
-              {/* Worldwide Service */}
               <div className="flex items-start">
                 <div className="text-primary text-3xl mr-4">
                   <PublicIcon />
@@ -211,7 +196,6 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* On Time Delivery */}
               <div className="flex items-start">
                 <div className="text-primary text-3xl mr-4">
                   <AccessAlarmIcon />
@@ -224,7 +208,6 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* 24/7 Telephone Support */}
               <div className="flex items-start">
                 <div className="text-primary text-3xl mr-4">
                   <PhoneIcon />
@@ -239,10 +222,9 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right Image Section */}
           <div className="w-full md:w-1/2">
             <Image
-              src="/home/features.jpg" // Replace with your image path
+              src="/home/features.jpg"
               alt="Features"
               width={600}
               height={400}
@@ -258,7 +240,6 @@ export default function Home() {
           <h3 className="text-4xl font-semibold">Our Clients Say!</h3>
         </div>
 
-        {/* Swiper slider */}
         <TestiSlider />
       </section>
     </>

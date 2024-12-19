@@ -21,11 +21,3 @@ body {
   background: var(--background);
   font-family: 'Nunito Sans', sans-serif;
 }
-
-.swiper-button-next,
-.swiper-button-prev {
-  color: #007bff;
-  /* Change color */
-  font-size: 30px;
-  /* Adjust size */
-}

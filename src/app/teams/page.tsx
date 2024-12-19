@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { GitHub, LinkedIn, Email } from "@mui/icons-material"; // Import the icons
+import { GitHub, LinkedIn, Email } from "@mui/icons-material";
 
 interface TeamMember {
     name: string;
@@ -17,8 +17,7 @@ export default function TeamsPage() {
     const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
 
     useEffect(() => {
-        // Fetch team members from randomuser.me
-        fetch("https://randomuser.me/api/?results=6&nat=us")  // You can adjust the number of members here
+        fetch("https://randomuser.me/api/?results=6&nat=us") 
             .then((response) => response.json())
             .then((data) => {
                 const members = data.results.map((member: any) => ({
@@ -63,7 +62,6 @@ export default function TeamsPage() {
                             </p>
                         </div>
                         <div className="flex justify-center mt-4 space-x-4">
-                            {/* Social Media Icons */}
                             <a href={`mailto:${member.email}`} target="_blank" rel="noopener noreferrer">
                                 <Email className="text-gray-600 hover:text-primary transform transition-transform duration-300 hover:scale-125" />
                             </a>

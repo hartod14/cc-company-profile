@@ -1,10 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css"; // Import Swiper styles
-import "swiper/css/pagination"; // Import pagination styles
-import "swiper/css/navigation"; // Import navigation styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import { Navigation, Pagination } from "swiper/modules";
 const testimonials = [
     {
@@ -47,29 +46,28 @@ const testimonials = [
 export default function TestiSlider() {
     return (
         <div>
-            {/* Swiper slider */}
             <Swiper
                 spaceBetween={30}
-                slidesPerView={1} // Default number of slides to show
+                slidesPerView={1}
                 loop={true}
-                autoplay={{ delay: 3000 }} // Auto-play the slides every 3 seconds
+                autoplay={{ delay: 3000 }} 
                 pagination={{
                     clickable: true,
-                    dynamicBullets: true, // Optional: makes pagination bullets dynamic
+                    dynamicBullets: true, 
                 }}
-                navigation={true} // Default navigation enabled
+                navigation={true} 
                 breakpoints={{
                     640: {
-                        slidesPerView: 1, // 1 slide for small screens
+                        slidesPerView: 1, 
                     },
                     768: {
-                        slidesPerView: 2, // 2 slides for medium screens
+                        slidesPerView: 2,
                     },
                     1024: {
-                        slidesPerView: 3, // 3 slides for larger screens
+                        slidesPerView: 3,
                     },
                 }}
-                modules={[Pagination, Navigation]} // Using Swiper modules for pagination and navigation
+                modules={[Pagination, Navigation]}
                 className="mySwiper"
             >
                 {testimonials.map((testimonial, index) => (

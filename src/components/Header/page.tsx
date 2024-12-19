@@ -29,16 +29,14 @@ export default function Header() {
         };
     }, [isPostDetailPage]);
 
-    // Close the menu when a link is clicked
     const handleLinkClick = () => {
         setIsMenuOpen(false);
     };
 
-    // Function to check if the current page is the active one
     const getLinkClass = (link: string) => {
         return pathname === link
-            ? "text-primary" // Active link
-            : "text-black hover:text-primary"; // Inactive link
+            ? "text-primary font-semibold"
+            : "text-black hover:text-primary";
     };
 
     return (
@@ -55,7 +53,6 @@ export default function Header() {
                     />
                 </Link>
 
-                {/* Desktop Menu */}
                 <nav className="hidden md:flex ">
                     <ul className="flex space-x-6 font-medium">
                         <li>
@@ -81,7 +78,6 @@ export default function Header() {
                     </ul>
                 </nav>
 
-                {/* Mobile Burger Button */}
                 <button
                     className="md:hidden text-white px-10"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -94,15 +90,14 @@ export default function Header() {
                 </button>
             </div>
 
-            {/* Mobile Sidebar Menu */}
             {isMenuOpen && (
                 <div
                     className="md:hidden fixed inset-0 bg-[#190808] bg-opacity-50 z-40 flex items-center justify-center"
-                    onClick={() => setIsMenuOpen(false)} // Close the menu when clicking outside
+                    onClick={() => setIsMenuOpen(false)}
                 >
                     <div
                         className="bg-white p-6 rounded-md w-3/4"
-                        onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the sidebar
+                        onClick={(e) => e.stopPropagation()}
                     >
                         <ul className="space-y-6 text-center text-lg font-medium">
                             <li>

@@ -152,7 +152,6 @@ export default function ServicesPage() {
                         className="bg-white p-6 rounded-lg shadow-lg group hover:shadow-xl transition duration-300"
                         onClick={() => toggleDescription(index)}
                     >
-                        {/* Image at the top of the card */}
                         <div className="mb-6">
                             <Image
                                 src={service.image}
@@ -191,7 +190,6 @@ export default function ServicesPage() {
                 ))}
             </div>
 
-            {/* Testimonials Section */}
             <section id="testimonials" className="py-16 px-8 md:px-32 bg-gray-100">
                 <div className="container mx-auto text-center mb-4">
                     <h2 className="text-xl font-bold mb-4 text-primary">Testimonial</h2>
