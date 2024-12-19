@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Navigation, Pagination } from "swiper/modules";
+import Image from "next/image";
 const testimonials = [
     {
         name: "John Doe",
@@ -50,15 +51,15 @@ export default function TestiSlider() {
                 spaceBetween={30}
                 slidesPerView={1}
                 loop={true}
-                autoplay={{ delay: 3000 }} 
+                autoplay={{ delay: 3000 }}
                 pagination={{
                     clickable: true,
-                    dynamicBullets: true, 
+                    dynamicBullets: true,
                 }}
-                navigation={true} 
+                navigation={true}
                 breakpoints={{
                     640: {
-                        slidesPerView: 1, 
+                        slidesPerView: 1,
                     },
                     768: {
                         slidesPerView: 2,
@@ -74,7 +75,9 @@ export default function TestiSlider() {
                     <SwiperSlide key={index} className="py-8">
                         <div className="bg-white p-8 rounded-lg shadow-lg">
                             <div className="flex justify-center mb-6">
-                                <img
+                                <Image
+                                    width={240}
+                                    height={240}
                                     src={testimonial.image}
                                     alt={testimonial.name}
                                     className="rounded-full border-4 border-gray w-24 h-24 object-cover shadow-lg"

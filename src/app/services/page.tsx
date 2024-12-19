@@ -171,9 +171,10 @@ export default function ServicesPage() {
                             <Link href="javascript:void(0)" className="flex items-center text-primary font-medium">
                                 <ArrowForwardIcon className="mr-2 transition-transform group-hover:translate-x-1" />
                                 <span className="opacity-0 group-hover:opacity-100 transition-opacity">
-                                    Read More
+                                    {`Read More about ${service.title}`}
                                 </span>
                             </Link>
+
                         </div>
 
                         {expandedServiceIndex === index && (

@@ -81,6 +81,7 @@ export default function Header() {
                 <button
                     className="md:hidden text-white px-10"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
+                    aria-label="Toggle navigation menu"
                 >
                     <div className="space-y-2">
                         <span className="block w-6 h-1 bg-gray-900"></span>

@@ -59,12 +59,12 @@ export default function Home() {
             #1 Place For Your <br />
             <span className="text-primary">LOGISTICS</span> SOLUTION
           </h2>
-          <p className="mt-6 text-lg max-w-2xl">
+          <p className="mt-6 text-sm md:text-lg max-w-2xl">
             We provide the best-in-class transport and logistics solutions tailored to your needs. From air freight to sea and road freight, we ensure timely and efficient delivery.
           </p>
           <Link
             href="#about-us"
-            className="mt-8 inline-block bg-primary text-white py-3 px-6 rounded-lg text-lg uppercase font-semibold hover:bg-orange-600 transition duration-300"
+            className="mt-8 inline-block bg-primary text-white  py-3 px-6 rounded-lg text-lg uppercase font-semibold hover:bg-red-500 transition duration-300"
           >
             Read More
           </Link>
