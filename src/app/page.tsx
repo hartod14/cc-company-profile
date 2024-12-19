@@ -52,10 +52,10 @@ export default function Home() {
         <div className="absolute inset-0 bg-black opacity-50"></div>
 
         <div className="relative px-4 pt-40 md:px-8 z-10">
-          <h1 className="text-md font-bold uppercase mb-4">
+          <h1 className="text-sm md:text-md font-bold uppercase mb-4">
             TRANSPORT & LOGISTIC SOLUTION
           </h1>
-          <h2 className="text-4xl md:text-4xl font-semibold">
+          <h2 className="text-2xl md:text-4xl font-semibold">
             #1 Place For Your <br />
             <span className="text-primary">LOGISTICS</span> SOLUTION
           </h2>
@@ -164,7 +164,7 @@ export default function Home() {
                 >
                   <ArrowForwardIcon className="mr-2 transition-transform group-hover:translate-x-1" />
                   <span className="opacity-0 group-hover:opacity-100 transition-opacity">
-                    Read More
+                    Learn more about {service.title}
                   </span>
                 </Link>
               </div>
